@@ -1,0 +1,59 @@
+.
+├── README.md
+├── designpattern
+│   ├── pom.xml
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── designpattern
+│   │   │   │           ├── Main.java
+│   │   │   │           ├── adapter
+│   │   │   │           ├── legacy
+│   │   │   │           ├── model
+│   │   │   │           │   └── Album.java
+│   │   │   │           └── services
+│   │   │   │               ├── ProcessadorCsvPadrao.java
+│   │   │   │               └── ProcessadorDeAlbuns.java
+│   │   │   └── resources
+│   │   │       └── dados
+│   │   │           └── albuns_novos.csv
+│   │   └── test
+│   │       ├── ProcessadorCsvPadraoTest.java
+│   │       └── java
+│   └── target
+│       ├── classes
+│       │   ├── com
+│       │   │   └── designpattern
+│       │   │       ├── Main.class
+│       │   │       ├── adapter
+│       │   │       ├── legacy
+│       │   │       ├── model
+│       │   │       │   └── Album.class
+│       │   │       └── services
+│       │   │           ├── ProcessadorCsvPadrao.class
+│       │   │           └── ProcessadorDeAlbuns.class
+│       │   └── dados
+│       │       └── albuns_novos.csv
+│       ├── designpattern-1.0-SNAPSHOT.jar
+│       ├── generated-sources
+│       │   └── annotations
+│       ├── generated-test-sources
+│       │   └── test-annotations
+│       ├── maven-archiver
+│       │   └── pom.properties
+│       ├── maven-status
+│       │   └── maven-compiler-plugin
+│       │       ├── compile
+│       │       │   └── default-compile
+│       │       │       ├── createdFiles.lst
+│       │       │       └── inputFiles.lst
+│       │       └── testCompile
+│       │           └── default-testCompile
+│       │               ├── createdFiles.lst
+│       │               └── inputFiles.lst
+│       └── test-classes
+├── directory_tree.txt
+└── tree_output.txt
+
+36 directories, 21 files

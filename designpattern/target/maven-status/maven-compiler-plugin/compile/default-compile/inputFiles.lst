@@ -1,0 +1,7 @@
+/workspaces/DesignPatternProject/designpattern/src/main/java/com/designpattern/Main.java
+/workspaces/DesignPatternProject/designpattern/src/main/java/com/designpattern/factory/CriadorAlbuns.java
+/workspaces/DesignPatternProject/designpattern/src/main/java/com/designpattern/legacy/ProcessarAlbunsLegacy.java
+/workspaces/DesignPatternProject/designpattern/src/main/java/com/designpattern/model/Album.java
+/workspaces/DesignPatternProject/designpattern/src/main/java/com/designpattern/services/ProcessadorCsvPadrao.java
+/workspaces/DesignPatternProject/designpattern/src/main/java/com/designpattern/services/ProcessadorDeAlbuns.java
+/workspaces/DesignPatternProject/designpattern/src/main/java/com/designpattern/ui/Menu.java

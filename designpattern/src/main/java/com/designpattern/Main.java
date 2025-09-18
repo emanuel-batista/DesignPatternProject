@@ -1,7 +1,10 @@
 package com.designpattern;
 
+import com.designpattern.ui.Menu;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Menu menu = new Menu();
+        menu.exibir();
     }
 }
