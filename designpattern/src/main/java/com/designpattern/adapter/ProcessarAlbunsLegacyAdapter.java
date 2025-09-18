@@ -12,7 +12,6 @@ public class ProcessarAlbunsLegacyAdapter implements ProcessadorDeAlbuns{
 
     @Override
     public void processarAlbum(Album album) {
-        // Assuming gravarAlbum expects the year as int, extract year from Date
         int anoLancamento = album.getDataLancamento().toInstant()
             .atZone(java.time.ZoneId.systemDefault())
             .getYear();

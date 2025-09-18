@@ -1,8 +1,15 @@
-import org.junit.jupiter.api.*;
-import java.io.*;
-import java.nio.file.*;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 class GravadorAlbunsTxtLegadoTest {
 
@@ -17,9 +24,6 @@ class GravadorAlbunsTxtLegadoTest {
         Files.createDirectories(caminho.getParent());
     }
 
-    /**
-     * Simula a gravação de um álbum no formato legado.
-     */
     void gravarAlbum(String artista, String titulo, int ano) {
         String registro = String.format("%s, %s, %d;%n", artista, titulo, ano);
         try (FileWriter fileWriter = new FileWriter(CAMINHO_DO_ARQUIVO, true);
@@ -48,7 +52,6 @@ class GravadorAlbunsTxtLegadoTest {
 
         String conteudo = Files.readString(Paths.get(CAMINHO_DO_ARQUIVO));
         String esperado = String.format("Taylor Swift, Midnights, 2022;%nBeyoncé, Renaissance, 2022;%n");
-        // Corrige para comparar cada linha
         String[] linhas = conteudo.split("\\r?\\n");
         assertEquals("Taylor Swift, Midnights, 2022;", linhas[0]);
         assertEquals("Beyoncé, Renaissance, 2022;", linhas[1]);
