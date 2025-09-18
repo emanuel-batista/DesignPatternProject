@@ -50,12 +50,14 @@ public class Menu {
     }
 
     private Album criarAlbumComInputDoUsuario() {
+        // Lê os detalhes do álbum a partir do input do usuário
         System.out.print("Digite o nome do álbum: ");
         String nome = scanner.nextLine();
         System.out.print("Digite o nome do artista: ");
         String artista = scanner.nextLine();
         System.out.print("Digite a data de lançamento (formato: yyyy-MM-dd): ");
         String dataInput = scanner.nextLine();
+        // Converte a string de data para java.util.Date
         SimpleDateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");
         java.util.Date dataLancamento;
         try {
@@ -72,6 +74,7 @@ public class Menu {
         return CriadorAlbuns.criarAlbum(nome, artista, dataLancamento);
     }
 
+    // Cria e processa o álbum usando o sistema CSV
     private void criarEProcessarAlbum() {
         System.out.println("\n--- A gravar no sistema novo (CSV) ---");
         Album novoAlbum = criarAlbumComInputDoUsuario();
@@ -81,6 +84,7 @@ public class Menu {
         }
     }
 
+    // Cria e processa o álbum usando o sistema legado
     private void criarAlbumLegacy() {
         System.out.println("\n--- A gravar no sistema legado (via Adaptador) ---");
         Album novoAlbum = criarAlbumComInputDoUsuario();
